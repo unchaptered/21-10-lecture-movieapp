@@ -14,6 +14,13 @@
   font-size: 26px;
   border: initial;
   background-color: initial;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.headerTitle:hover,
+.headerTitle:focus {
+  opacity: 1;
+  transform: scale(1.1);
 }
 .headerDescription {
   position: absolute;

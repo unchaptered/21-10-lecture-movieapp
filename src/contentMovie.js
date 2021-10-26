@@ -18,7 +18,7 @@ function ContentMovie({id, year, title, summary, poster, genres}){
                         (element, index)=>( <li key={index} className="movie__genresContent"> {element} </li> )
                     )}
                 </ul> */}
-                <h6 className="movie__summary">{summary}</h6>
+                <h6 className="movie__summary">{summary.slice(0,500)}</h6>
             </div>
         </div>
     );

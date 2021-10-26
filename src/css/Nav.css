@@ -2,8 +2,21 @@
   /* background-color: thistle; */
   height: 100%;
 }
-.navDiv {
+.navBtn {
   margin-top: 10px;
   margin-left: 10%;
   width: 80%;
+
+  border: initial;
+  background-color: initial;
+}
+.navSVG {
+  width: 20px;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.navSVG:hover,
+.navSVG:focus {
+  opacity: 1;
+  transform: scale(1.4);
 }
