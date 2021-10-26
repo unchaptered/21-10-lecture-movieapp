@@ -1,0 +1,21 @@
+.headerChild {
+  width: 92px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+}
+.headerDiv {
+  position: relative;
+  /* background-color: white; */
+}
+.headerTitle {
+  font-size: 26px;
+  border: initial;
+  background-color: initial;
+}
+.headerDescription {
+  position: absolute;
+  opacity: 0;
+}

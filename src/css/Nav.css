@@ -1,0 +1,9 @@
+.navChild {
+  /* background-color: thistle; */
+  height: 100%;
+}
+.navDiv {
+  margin-top: 10px;
+  margin-left: 10%;
+  width: 80%;
+}

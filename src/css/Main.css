@@ -1,0 +1,37 @@
+#mainParent {
+  background-color: rgb(202, 202, 202);
+}
+
+.mainChild {
+  padding: 20px;
+  min-height: 100vh;
+  height: auto;
+  /* background-color: rgb(153, 153, 202); */
+  /* 11.16 9 to 6 5 month...
+  11.18 9 to 4 6 month... */
+}
+
+.mainLoading {
+  min-height: 100%;
+}
+
+.mainLoaded {
+  min-height: 100%;
+  gap: 50px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  padding: 70px;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 1100px) {
+  .mainLoaded {
+    gap: 70px;
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 701px) {
+  .mainLoaded {
+    padding: initial;
+  }
+}

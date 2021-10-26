@@ -1,0 +1,28 @@
+/* Reset */
+@import "./reset.css";
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#navLeft {
+  position: fixed;
+  width: 92px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#headerParent {
+  height: 10%;
+}
+#navParent {
+  height: 90%;
+}
+#mainParent {
+  padding-left: 92px;
+  height: 100%;
+}
