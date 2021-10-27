@@ -1,6 +1,7 @@
 import React from "react";
+import styles from "../css/contentMovie.css";
+
 import PropTypes from "prop-types";
-import styles from "./css/contentMovie.css";
 
 function ContentMovie({id, year, title, summary, poster, genres}){
     return (

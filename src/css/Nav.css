@@ -1,14 +1,30 @@
 .navChild {
   /* background-color: thistle; */
+  width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .navBtn {
-  margin-top: 10px;
-  margin-left: 10%;
-  width: 80%;
-
+  color: initial;
   border: initial;
+  text-decoration: initial;
   background-color: initial;
+
+  width: 40px;
+  margin-top: 10px;
+  opacity: 0.8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease-in-out;
+}
+.navBtn:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 .navSVG {
   width: 20px;
@@ -19,4 +35,7 @@
 .navSVG:focus {
   opacity: 1;
   transform: scale(1.4);
+}
+.navSVGno {
+  opacity: 0.5;
 }

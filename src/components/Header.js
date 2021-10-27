@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./css/Header.css";
+import styles from "../css/Header.css";
 
 function Header () {
     return (
         <header className="headerChild">
             <div className="headerDiv">
-                <button className="headerTitle">Movie</button>
+                <a href="/" className="headerTitle">Movie</a>
                 <h3 className="headerDescription">Description</h3>
             </div>
         </header>

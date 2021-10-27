@@ -4,6 +4,7 @@
 *.json
 *.node_modules
 yarn.lock
+*.md
 
 # dependencies
 /node_modules

@@ -1,11 +1,11 @@
 import React from "react";
+import styles from "../css/Home.css";
+
 import axios from "axios";
-import ContentMovie from "./contentMovie";
-import styles from "./css/Main.css";
-// import PropTypes from "prop-types";
+import ContentMovie from "../components/contentMovie";
 
 // Dynamic Data
-class Main extends React.Component{
+class Home extends React.Component{
     state={
         isLoading: true,
         movies: []
@@ -58,4 +58,4 @@ class Main extends React.Component{
     };
 };
 
-export default Main;
+export default Home;

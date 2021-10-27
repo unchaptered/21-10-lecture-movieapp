@@ -12,15 +12,18 @@
 }
 .headerTitle {
   font-size: 26px;
+  font-weight: 600;
+  color: initial;
   border: initial;
+  text-decoration: initial;
   background-color: initial;
+
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
 }
 .headerTitle:hover,
 .headerTitle:focus {
-  opacity: 1;
-  transform: scale(1.1);
+  opacity: 0.3;
 }
 .headerDescription {
   position: absolute;
