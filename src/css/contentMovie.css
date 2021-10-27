@@ -1,4 +1,7 @@
 .movie {
+  color: initial;
+  text-decoration: initial;
+
   display: grid;
   grid-template: repeat(1, minmax(10px, auto)) / repeat(2, minmax(10px, auto));
   background-color: white;

@@ -1,6 +1,8 @@
 import React from "react";
-import styles from "../css/Nav.css";
 import { Link } from "react-router-dom";
+
+import styles from "../css/Nav.css";
+
 function Nav() {
     return (
         <div className="navChild">
@@ -29,11 +31,11 @@ function Nav() {
                     <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
                 </svg>
             </button>
-            <a href="/#/about" className="navBtn">
+            <Link to="/about" className="navBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 navSVG" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                 </svg>
-            </a>
+            </Link>
         </div>
     );
 };

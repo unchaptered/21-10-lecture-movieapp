@@ -1,11 +1,22 @@
 import React from "react";
-import styles from "../css/contentMovie.css";
+import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
 
+import styles from "../css/contentMovie.css";
+
 function ContentMovie({id, year, title, summary, poster, genres}){
     return (
-        <div className="movie">
+        <Link to={{
+            pathname: `/movie/${id}`,
+            state: {
+                year,
+                title,
+                summary,
+                poster,
+                genres
+            }
+        }} className="movie">
             <div className="movie__img">
                 <img className="movie__poster" src={poster} alt={title} title={title} />
             </div>
@@ -21,7 +32,7 @@ function ContentMovie({id, year, title, summary, poster, genres}){
                 </ul> */}
                 <h6 className="movie__summary">{summary.slice(0,500)}</h6>
             </div>
-        </div>
+        </Link>
     );
 };
 

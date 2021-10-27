@@ -15,6 +15,6 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 
 
-ReactDOM.render(<Nav />,document.getElementById("navParent"));
-ReactDOM.render(<Header />,document.getElementById("headerParent"));
-ReactDOM.render(<Router />,document.getElementById("mainParent"));
+// ReactDOM.render(<Nav />,document.getElementById("navParent"));
+// ReactDOM.render(<Header />,document.getElementById("headerParent"));
+ReactDOM.render(<Router />,document.getElementById("App"));

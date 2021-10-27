@@ -2,14 +2,29 @@ import React from "react";
 
 import { HashRouter, Route } from "react-router-dom";
 
-import About from "./routes/About";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+
 import Home from "./routes/Home";
+import About from "./routes/About";
+import DetailedMovie from "./routes/DetailedMovie";
 
 function Router(){
     return (
         <HashRouter>
-            <Route path="/" exact={true} component={Home} />
-            <Route path="/about" component={About} />
+            <nav id="navLeft">
+                <div id="headerParent">
+                    <Header />
+                </div>
+                <div id="navParent">
+                    <Nav />
+                </div>
+            </nav>
+            <main id="mainParent">
+                <Route path="/" exact={true} component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/movie/:id" component={DetailedMovie}/>
+            </main>
         </HashRouter>
     );
 };
